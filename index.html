@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 :root {
   --bg:      #FFFDE7;
   --bg2:     #FFF9C4;
@@ -21,16 +20,16 @@
   --rose:    #E07070;
   --gold:    #D4A017;
 }
-
+ 
 html { scroll-behavior: smooth; }
-
+ 
 body {
   background: var(--bg);
   min-height: 100vh;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
-
+ 
 /* ════════════════════════════════
    WELCOME SCREEN
 ════════════════════════════════ */
@@ -52,7 +51,7 @@ body {
   transform: scale(1.04);
   pointer-events: none;
 }
-
+ 
 .welcome-border {
   border: 3px solid var(--border);
   border-radius: 20px;
@@ -72,7 +71,7 @@ body {
 }
 .welcome-border::before { top: 14px; left: 18px; }
 .welcome-border::after  { bottom: 14px; right: 18px; }
-
+ 
 .welcome-emoji {
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -83,7 +82,7 @@ body {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-10px); }
 }
-
+ 
 .welcome-title {
   font-family: 'Dancing Script', cursive;
   font-size: clamp(2rem, 7vw, 3rem);
@@ -144,7 +143,7 @@ body {
   42%       { transform: scale(1.14); }
   56%       { transform: scale(1); }
 }
-
+ 
 /* sparkle particles around heart */
 .heart-sparkle {
   position: absolute;
@@ -162,7 +161,7 @@ body {
   90%  { opacity: .7; }
   100% { transform: rotate(360deg) translateX(52px) rotate(-360deg); opacity: 0; }
 }
-
+ 
 /* romantic tagline under heart */
 .heart-tagline {
   font-family: 'Playfair Display', serif;
@@ -186,7 +185,7 @@ body {
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
+ 
 /* heart tap message */
 .heart-msg {
   position: absolute;
@@ -208,7 +207,7 @@ body {
   transition: opacity .3s;
 }
 .heart-msg.show { opacity: 1; }
-
+ 
 .btn-open {
   background: linear-gradient(135deg, var(--border), var(--accent));
   color: #3D2C00;
@@ -224,7 +223,7 @@ body {
 }
 .btn-open:hover { transform: scale(1.04); box-shadow: 0 6px 24px rgba(212,160,23,.5); }
 .btn-open:active { transform: scale(.97); }
-
+ 
 /* ════════════════════════════════
    FLOATING STARS / SPARKLES
 ════════════════════════════════ */
@@ -244,14 +243,14 @@ body {
 .star:nth-child(6)  { left: 73%; animation-duration:  8s; animation-delay: 5s;   font-size: .65rem; }
 .star:nth-child(7)  { left: 85%; animation-duration: 12s; animation-delay: 1.5s; }
 .star:nth-child(8)  { left: 92%; animation-duration:  9s; animation-delay: 6s;   font-size: .75rem; }
-
+ 
 @keyframes fallStar {
   0%   { transform: translateY(0) rotate(0); opacity: 0; }
   10%  { opacity: .8; }
   90%  { opacity: .4; }
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
 }
-
+ 
 /* ════════════════════════════════
    MAIN LAYOUT
 ════════════════════════════════ */
@@ -267,7 +266,7 @@ body {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
+ 
 /* ════════════════════════════════
    CARD
 ════════════════════════════════ */
@@ -282,7 +281,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+ 
 /* double border effect */
 .card::before {
   content: '';
@@ -292,7 +291,7 @@ body {
   border-radius: 10px;
   pointer-events: none;
 }
-
+ 
 /* subtle pattern */
 .card::after {
   content: '';
@@ -302,19 +301,19 @@ body {
   background-size: 22px 22px;
   pointer-events: none;
 }
-
+ 
 /* corner flowers */
 .corner { position: absolute; font-size: 1.5rem; opacity: .3; z-index: 1; }
 .corner.tl { top: 18px;  left: 20px;  }
 .corner.tr { top: 18px;  right: 20px; }
 .corner.bl { bottom: 18px; left: 20px;  }
 .corner.br { bottom: 18px; right: 20px; }
-
+ 
 /* ════════════════════════════════
    HEADER
 ════════════════════════════════ */
 .header { text-align: center; margin-bottom: 2rem; position: relative; z-index: 1; }
-
+ 
 .eyebrow {
   font-size: .7rem;
   letter-spacing: .22em;
@@ -340,12 +339,12 @@ body {
 }
 .divider::after { background: linear-gradient(to left, transparent, var(--border)); }
 .div-icon { color: var(--accent); font-size: .9rem; }
-
+ 
 /* ════════════════════════════════
    BODY TEXT
 ════════════════════════════════ */
 .body-content { position: relative; z-index: 1; }
-
+ 
 .saludo {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -361,7 +360,7 @@ body {
   margin-bottom: 1.3rem;
 }
 .parrafo strong { font-weight: 400; color: #B07000; }
-
+ 
 /* quote box */
 .quote-box {
   border-left: 4px solid var(--border);
@@ -377,7 +376,7 @@ body {
   color: var(--ink);
   line-height: 1.75;
 }
-
+ 
 /* ════════════════════════════════
    INTERACTIVE PROMISES
 ════════════════════════════════ */
@@ -422,7 +421,7 @@ body {
 }
 .promises li.sealed .promise-icon { transform: scale(1.3); }
 .promises li.sealed .promise-text { font-weight: 400; }
-
+ 
 .hint {
   font-size: .76rem;
   color: var(--muted);
@@ -430,7 +429,7 @@ body {
   margin-bottom: 1.4rem;
   text-align: center;
 }
-
+ 
 /* ════════════════════════════════
    LOVE COUNTER
 ════════════════════════════════ */
@@ -476,7 +475,162 @@ body {
   transition: transform .15s, background .15s;
 }
 .btn-love:hover { background: var(--accent); color: #fff; transform: scale(1.06); }
-
+ 
+/* ════════════════════════════════
+   THREAD HEART GAME
+════════════════════════════════ */
+.thread-heart-section {
+  background: linear-gradient(135deg, rgba(249,199,79,.15), rgba(244,165,0,.08));
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 1.6rem 1.2rem 1.8rem;
+  margin: 1.8rem 0;
+  text-align: center;
+}
+.thread-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.6;
+  margin-bottom: .6rem;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thread-hint {
+  font-size: .8rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: .8rem;
+  font-family: 'Lato', sans-serif;
+}
+.thread-canvas-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .6rem;
+}
+#threadCanvas {
+  max-width: 100%;
+  touch-action: none;
+  cursor: pointer;
+  background: rgba(255,255,255,.5);
+  border-radius: 12px;
+}
+.thread-sub {
+  font-size: .82rem;
+  color: var(--muted);
+  font-style: italic;
+}
+ 
+/* ════════════════════════════════
+   FREE DRAW SECTION
+════════════════════════════════ */
+.draw-section {
+  margin: 1.8rem 0;
+  text-align: center;
+}
+.draw-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: .25rem;
+}
+.draw-sub {
+  font-size: .88rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.draw-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.draw-chip {
+  background: rgba(249,199,79,.18);
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+  padding: .4rem 1rem;
+  font-size: .82rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .15s, transform .15s;
+}
+.draw-chip:hover { background: rgba(249,199,79,.35); transform: translateY(-1px); }
+ 
+.draw-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: .6rem .9rem;
+  background: rgba(255,255,255,.55);
+  border-radius: 50px;
+  border: 1.5px solid rgba(249,199,79,.4);
+}
+.color-row { display: flex; gap: .4rem; }
+.color-dot {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,.08);
+  background: var(--c);
+  cursor: pointer;
+  transition: transform .15s;
+  padding: 0;
+}
+.color-dot.selected { border-color: var(--ink); transform: scale(1.18); }
+.size-row { display: flex; gap: .3rem; align-items: center; }
+.size-btn {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem;
+}
+.size-btn.selected { color: var(--ink); border-color: var(--border); background: rgba(249,199,79,.2); }
+.draw-clear-btn { margin-top: 0; padding: .45rem 1.1rem; font-size: .95rem; }
+ 
+.draw-canvas-wrap {
+  position: relative;
+  border: 3px solid var(--border);
+  border-radius: 14px;
+  background: #fffef9;
+  box-shadow: inset 0 0 0 6px rgba(249,199,79,.08);
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#drawCanvas {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  touch-action: none;
+  cursor: crosshair;
+}
+.draw-empty-hint {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  color: rgba(160,128,48,.35);
+  pointer-events: none;
+}
+.draw-empty-hint.hidden { display: none; }
+ 
 /* ════════════════════════════════
    CLOSING
 ════════════════════════════════ */
@@ -484,7 +638,7 @@ body {
 .cierre-text { font-weight: 300; font-size: .88rem; color: var(--muted); margin-bottom: .3rem; }
 .firma { font-family: 'Dancing Script', cursive; font-size: 2.2rem; color: var(--ink); font-weight: 700; }
 .fecha { font-size: .74rem; letter-spacing: .12em; color: var(--muted); margin-top: .25rem; }
-
+ 
 /* ════════════════════════════════
    GLOWING HEART (inside carta)
 ════════════════════════════════ */
@@ -600,7 +754,7 @@ body {
   transition: opacity .3s;
 }
 .heart-msg.show { opacity: 1; }
-
+ 
 /* ════════════════════════════════
    BEATING HEART + CLICK HEARTS (legacy, keep for compat)
 ════════════════════════════════ */
@@ -619,7 +773,7 @@ body {
   30%       { transform: scale(1.35); }
   60%       { transform: scale(.92); }
 }
-
+ 
 /* floating heart on click */
 .pop-heart {
   position: fixed;
@@ -633,11 +787,11 @@ body {
   80%  { opacity: 1; }
   100% { transform: translateY(-90px) scale(1.2); opacity: 0; }
 }
-
+ 
 /* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
-
+ 
 /* ════════════════════════════════
    PHOTO SCREEN
 ════════════════════════════════ */
@@ -660,7 +814,7 @@ body {
 #photo-screen.fade-in {
   opacity: 1;
 }
-
+ 
 #photo-hearts-canvas {
   position: fixed;
   inset: 0;
@@ -668,7 +822,7 @@ body {
   z-index: 0;
   overflow: hidden;
 }
-
+ 
 .photo-card {
   position: relative;
   z-index: 2;
@@ -687,7 +841,7 @@ body {
   0%   { opacity: 0; transform: scale(.7) translateY(30px); }
   100% { opacity: 1; transform: scale(1) translateY(0); }
 }
-
+ 
 .photo-glow-ring {
   position: absolute;
   inset: -18px;
@@ -704,7 +858,7 @@ body {
   animation: pulseRing 2.2s ease-in-out infinite .6s;
   z-index: -1;
 }
-
+ 
 .photo-frame-wrap {
   position: relative;
   border-radius: 16px;
@@ -745,7 +899,7 @@ body {
   font-size: 1.1rem;
 }
 .photo-placeholder span { font-size: 3rem; }
-
+ 
 .photo-title {
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
@@ -767,7 +921,7 @@ body {
   color: var(--accent);
   font-weight: 700;
 }
-
+ 
 /* floating heart for photo explosion */
 .fly-heart {
   position: fixed;
@@ -781,29 +935,61 @@ body {
   80%  { opacity: 1; }
   100% { transform: translateY(var(--dist)) rotate(var(--rot2)) scale(1.1); opacity: 0; }
 }
-
+ 
   .card { padding: 2.5rem 1.4rem 2rem; }
   .welcome-border { padding: 2.2rem 1.5rem; }
 }
-
+ 
 @media (prefers-reduced-motion: reduce) {
   .star, .welcome-emoji, .heart-footer, #carta-wrap { animation: none; opacity: 1; }
 }
+ 
+/* ════════════════════════════════
+   MUSIC CONTROL BUTTON
+════════════════════════════════ */
+#music-control {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 250;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.85);
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 16px rgba(180,130,0,.25);
+  transition: transform .15s;
+  user-select: none;
+}
+#music-control:hover { transform: scale(1.08); }
+#music-control.muted { opacity: .55; }
 </style>
 </head>
 <body>
-
+ 
+<!-- ══ AUDIO ══ -->
+<audio id="bg-music" loop preload="auto">
+  <source src="4Ever.mp3" type="audio/mpeg">
+</audio>
+ 
+<div id="music-control" onclick="toggleMusic()" title="Música">🎵</div>
+ 
 <!-- ══ WELCOME SCREEN ══ -->
 <div id="welcome">
   <div class="welcome-border">
     <span class="welcome-emoji">💌</span>
     <h1 class="welcome-title">Para mi Angy</h1>
     <p class="welcome-sub">Tengo algo que decirte...</p>
-
+ 
     <button class="btn-open" onclick="abrirCarta()">Abrir mi carta 💛</button>
   </div>
 </div>
-
+ 
 <!-- ══ SPARKLES ══ -->
 <div class="sparkles" aria-hidden="true">
   <div class="star">✨</div>
@@ -815,93 +1001,119 @@ body {
   <div class="star">💫</div>
   <div class="star">✨</div>
 </div>
-
+ 
 <!-- ══ CARTA ══ -->
 <div id="carta-wrap" style="display:none;">
   <div class="card" role="main">
-
+ 
     <span class="corner tl" aria-hidden="true">🌸</span>
     <span class="corner tr" aria-hidden="true">🌸</span>
     <span class="corner bl" aria-hidden="true">🌼</span>
     <span class="corner br" aria-hidden="true">🌼</span>
-
+ 
     <!-- Header -->
     <div class="header">
       <p class="eyebrow">Una carta solo para ti</p>
       <h1 class="title">Para mi princesita hermosa</h1>
       <div class="divider"><span class="div-icon">💛</span></div>
     </div>
-
+ 
     <!-- Body -->
     <div class="body-content">
-
+ 
       <p class="saludo">Mi niña, mi Angy:</p>
-
+ 
       <p class="parrafo">
         Hay cosas que uno trae guardadas y que a veces no sabe muy bien cómo decirlas.
         Pero hoy me senté a escribirte esto porque tú te mereces saber todo lo que significas para mí.
         <strong>Te amo</strong>, y no lo digo de costumbre. Lo digo porque es lo más verdadero que tengo.
       </p>
-
+ 
       <p class="parrafo">
         Eres <strong>todo para mí</strong>, Angy. No es cuento. Cuando pienso en lo que me importa
         de verdad, en lo que me da ganas de dar lo mejor de mí, pienso en ti. En tu sonrisa,
         en tu voz, en la forma en que existes en mi mundo y lo vuelves mejor sin ni siquiera intentarlo.
       </p>
-
+ 
       <div class="quote-box">
         <p>
           Quiero que sepas que nunca vas a estar sola. Que cada vez que me necesites,
           ahí voy a estar. Sin pensarlo, sin condiciones, sin excusas.
         </p>
       </div>
-
+ 
       <p class="parrafo">
         Si algún día algo se siente muy pesado, si necesitas hablar, llorar, desahogarte
         o simplemente que alguien esté ahí en silencio contigo, ese alguien <strong>soy yo</strong>.
         Cuéntame lo que sea, cuando sea. Te escucho de verdad, con toda mi atención
         y con todo mi corazón.
       </p>
-
-      <!-- Love counter -->
-      <div class="love-counter">
-        <p class="counter-label">Veces que pienso en ti al día</p>
-        <p class="counter-num" id="counter">∞</p>
-        <p class="counter-sub">...o presiona si crees que me quedé corto</p>
-        <button class="btn-love" onclick="sumarAmor()">💛 +1 vez más</button>
+ 
+      <!-- Hilo que forma un corazón -->
+      <div class="thread-heart-section">
+        <p class="thread-title">Une los puntos y forma un corazón con un hilo, como lo que tejimos tú y yo</p>
+        <p class="thread-hint" id="threadHint">Toca los puntos en orden, del 1 al 12 ✨</p>
+        <div class="thread-canvas-wrap">
+          <canvas id="threadCanvas" width="300" height="280"></canvas>
+        </div>
+        <p class="thread-sub" id="threadSub">Punto 1 de 12</p>
+        <button class="btn-love" id="threadResetBtn" onclick="resetThread()" style="display:none;">🪡 Tejer otra vez</button>
       </div>
-
+ 
       <p class="parrafo">
-        Y para que quede bien claro, aquí están mis promesas para ti. Tócalas una por una:
+        Y para que quede bien claro, aquí están mis promesas para ti: siempre voy a ver por ti, en lo grande
+        y en lo pequeño. Cuando me necesites, voy a estar ahí, sin tardanza y sin pretextos. Te voy a escuchar
+        de verdad, no solo a oírte, sino a entenderte. Voy a cuidar tu corazoncito como el tesoro que es,
+        siempre con amor. Puedes contar conmigo para todo lo que quieras o necesites, todo. Y te voy a amar
+        cada día con más fuerza que el anterior.
       </p>
-
-      <p class="hints hint">👆 Toca cada promesa para sellarla</p>
-
-      <ul class="promises" id="promises-list">
-        <li onclick="sellar(this)"><span class="promise-icon">🤍</span><span class="promise-text">Siempre voy a ver por ti, en lo grande y en lo pequeño.</span></li>
-        <li onclick="sellar(this)"><span class="promise-icon">🤍</span><span class="promise-text">Cuando me necesites, voy a estar ahí. Sin tardanza y sin pretextos.</span></li>
-        <li onclick="sellar(this)"><span class="promise-icon">🤍</span><span class="promise-text">Te voy a escuchar de verdad. No solo oírte, sino entenderte.</span></li>
-        <li onclick="sellar(this)"><span class="promise-icon">🤍</span><span class="promise-text">Voy a cuidar tu corazoncito como el tesoro que es, siempre con amor.</span></li>
-        <li onclick="sellar(this)"><span class="promise-icon">🤍</span><span class="promise-text">Puedes contar conmigo para todo lo que quieras o necesites. Todo.</span></li>
-        <li onclick="sellar(this)"><span class="promise-icon">🤍</span><span class="promise-text">Te voy a amar cada día con más fuerza que el anterior.</span></li>
-      </ul>
-
-      <p id="all-sealed-msg" style="display:none; text-align:center; font-family:'Dancing Script',cursive; font-size:1.3rem; color:var(--accent); margin-bottom:1rem;">
-        💛 Todas selladas con amor 💛
-      </p>
-
+ 
+      <!-- Lienzo libre para dibujar juntos -->
+      <div class="draw-section">
+        <p class="draw-title">Dibuja algo de nosotros 🎨</p>
+        <p class="draw-sub">Un corazón, nuestras iniciales juntas, lo que se te ocurra. Este espacio es tuyo.</p>
+ 
+        <div class="draw-chips">
+          <button class="draw-chip" onclick="dibujarSugerencia('corazon')">🤍 Un corazón</button>
+          <button class="draw-chip" onclick="dibujarSugerencia('iniciales')">✒️ Nuestras iniciales</button>
+          <button class="draw-chip" onclick="dibujarSugerencia('infinito')">♾️ Un infinito</button>
+        </div>
+ 
+        <div class="draw-toolbar">
+          <div class="color-row" id="colorRow">
+            <button class="color-dot" style="--c:#3D2C00" data-color="#3D2C00" onclick="setColor(this)"></button>
+            <button class="color-dot selected" style="--c:#E07070" data-color="#E07070" onclick="setColor(this)"></button>
+            <button class="color-dot" style="--c:#F4A500" data-color="#F4A500" onclick="setColor(this)"></button>
+            <button class="color-dot" style="--c:#7CA982" data-color="#7CA982" onclick="setColor(this)"></button>
+            <button class="color-dot" style="--c:#6E8FCB" data-color="#6E8FCB" onclick="setColor(this)"></button>
+            <button class="color-dot" style="--c:#B07AC4" data-color="#B07AC4" onclick="setColor(this)"></button>
+          </div>
+          <div class="size-row">
+            <button class="size-btn" data-size="3" onclick="setSize(this)">●</button>
+            <button class="size-btn selected" data-size="6" onclick="setSize(this)" style="font-size:1.2rem;">●</button>
+            <button class="size-btn" data-size="11" onclick="setSize(this)" style="font-size:1.6rem;">●</button>
+          </div>
+          <button class="btn-love draw-clear-btn" onclick="limpiarLienzo()">🧹 Borrar</button>
+        </div>
+ 
+        <div class="draw-canvas-wrap">
+          <canvas id="drawCanvas" width="600" height="380"></canvas>
+          <p class="draw-empty-hint" id="drawEmptyHint">empieza a dibujar aquí ✏️</p>
+        </div>
+      </div>
+ 
       <p class="parrafo">
         Tu corazón está seguro conmigo, Angy. Lo cuido, lo respeto y lo amo.
         Eres mi niña, mi princesita hermosa, y me siento el más afortunado del mundo de tenerte.
         <strong>Te amo con todo lo que soy</strong>, hoy y siempre.
       </p>
-
+ 
       <div class="cierre">
         <p class="cierre-text">Con todo mi amor,</p>
         <p class="firma">Fer</p>
         <p class="fecha">Junio · 2026</p>
       </div>
-
+ 
       <!-- Glowing heart section inside carta -->
       <div class="glow-heart-section">
         <div class="glow-heart-wrap" onclick="heartTap(this)" id="cartaHeart">
@@ -918,11 +1130,11 @@ body {
         <p class="heart-tagline2">...y eso ya es decir muchísimo 🌟</p>
         <p class="heart-hint">Tócalo 💛</p>
       </div>
-
+ 
     </div>
   </div>
 </div>
-
+ 
 <!-- ══ PHOTO SCREEN ══ -->
 <div id="photo-screen">
   <div id="photo-hearts-canvas"></div>
@@ -944,8 +1156,39 @@ body {
     </div>
   </div>
 </div>
-
+ 
 <script>
+  /* ── Music ── */
+  const bgMusic = document.getElementById('bg-music');
+  const musicControl = document.getElementById('music-control');
+  let musicStarted = false;
+ 
+  function startMusic() {
+    if (musicStarted) return;
+    musicStarted = true;
+    bgMusic.volume = 0.85;
+    const p = bgMusic.play();
+    if (p && p.catch) {
+      p.catch(() => {
+        // El navegador bloqueó el autoplay; el botón flotante deja reproducirla manualmente
+        musicStarted = false;
+      });
+    }
+  }
+ 
+  function toggleMusic() {
+    if (bgMusic.paused) {
+      bgMusic.play();
+      musicControl.classList.remove('muted');
+      musicControl.textContent = '🎵';
+      musicStarted = true;
+    } else {
+      bgMusic.pause();
+      musicControl.classList.add('muted');
+      musicControl.textContent = '🔇';
+    }
+  }
+ 
   /* ── Carta heart tap ── */
   const heartMessages = [
     "¡Eres mi todo! 💛",
@@ -976,10 +1219,10 @@ body {
     }
     heartTapCount++;
   }
-
+ 
   /* ── Scroll to bottom → show photo screen ── */
   let photoShown = false;
-
+ 
   function checkScroll() {
     if (photoShown) return;
     const scrolled = window.scrollY + window.innerHeight;
@@ -988,7 +1231,7 @@ body {
       mostrarFoto();
     }
   }
-
+ 
   // Also use IntersectionObserver on the glow heart section as trigger
   function initScrollWatcher() {
     const target = document.querySelector('.glow-heart-section');
@@ -1001,7 +1244,7 @@ body {
     obs.observe(target);
     window.addEventListener('scroll', checkScroll, { passive: true });
   }
-
+ 
   function mostrarFoto() {
     if (photoShown) return;
     photoShown = true;
@@ -1026,9 +1269,9 @@ body {
       if (rainCount > 16) clearInterval(rainInterval);
     }, 500);
   }
-
+ 
   const heartEmojis = ['💛','💕','💖','💗','💓','✨','🌟','💫','🌸'];
-
+ 
   function explocionCorazones() {
     const cx = window.innerWidth / 2;
     const cy = window.innerHeight / 2;
@@ -1053,7 +1296,7 @@ body {
       setTimeout(() => h.remove(), dur + 100);
     }
   }
-
+ 
   function llueviaCorazones() {
     for (let i = 0; i < 4; i++) {
       setTimeout(() => {
@@ -1072,11 +1315,12 @@ body {
       }, i * 120);
     }
   }
-
+ 
   /* ── Open carta ── */
   function abrirCarta() {
     const w = document.getElementById('welcome');
     const c = document.getElementById('carta-wrap');
+    startMusic();
     w.classList.add('hidden');
     setTimeout(() => {
       w.style.display = 'none';
@@ -1084,7 +1328,7 @@ body {
       setTimeout(initScrollWatcher, 500);
     }, 800);
   }
-
+ 
   /* ── Love counter ── */
   let count = 0;
   function sumarAmor() {
@@ -1094,13 +1338,13 @@ body {
     el.style.transform = 'scale(1.25)';
     setTimeout(() => el.style.transform = 'scale(1)', 200);
   }
-
+ 
   /* ── Seal promises ── */
   function sellar(li) {
     if (li.classList.contains('sealed')) return;
     li.classList.add('sealed');
     li.querySelector('.promise-icon').textContent = '💛';
-
+ 
     const all = document.querySelectorAll('.promises li');
     const done = document.querySelectorAll('.promises li.sealed');
     if (done.length === all.length) {
@@ -1110,19 +1354,19 @@ body {
     }
     spawnHeart(li);
   }
-
+ 
   /* ── Pop hearts on click ── */
   function explotar(e) {
     for (let i = 0; i < 6; i++) {
       setTimeout(() => crearCorazon(e.clientX, e.clientY), i * 80);
     }
   }
-
+ 
   function spawnHeart(el) {
     const r = el.getBoundingClientRect();
     crearCorazon(r.left + r.width / 2, r.top + r.height / 2);
   }
-
+ 
   function crearCorazon(x, y) {
     const h = document.createElement('div');
     h.classList.add('pop-heart');
